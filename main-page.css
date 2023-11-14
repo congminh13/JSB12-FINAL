@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.welcome {
+    width: 100%;
+    height: 100vh;
+    background: url("./welcome-page.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    height:10%;
+    width:100%;
+    font-family: 'Comfortaa', sans-serif;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-bar {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transition: background-color 0.5s ease;
+}
+
+.nav-bar.scrolled {
+    background-color: #3a3737d8;
+}
+
+.navbar-item {
+    font-family: 'Comfortaa', sans-serif;
+    position: relative; 
+    display: flex;
+    margin: 15px;
+    padding: 8px;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, color 0.4s ease, font-size 0.3s ease;
+}
+
+.navbar-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    width: 0; 
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar-item:hover {
+    font-size: large;
+    color: #FEC723;
+}
+
+.navbar-item:hover::before {
+    width: 100%; 
+}
+
+.request{
+    display: flex;
+    align-items: center;
+    color: #FEC723;
+    margin:23px;
+    padding-left: 12px;
+    border-left: 4px solid #FEC723;
+    transition: color 0.2s ease, color 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.request:hover {
+    display: flex;
+    align-items: center;
+    color: #cfb448;
+    margin:23px;
+    padding-left: 12px;
+    border-left: 4px solid #FEC723;
+    cursor: pointer;
+}
+
+.welcome-page {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.welcome-heading {
+    z-index: 1;
+    color: #FEC723;
+    font-size: 35px;
+    padding-top: 100px;
+    padding-inline: 50px;
+    text-align: center;
+    font-family: 'Playfair', serif;
+}
+
+.welcome-heading h2 {
+    font-weight: 900;
+}
+
+.welcome-heading p {
+    color: #FEC723;
+    font-size: 35px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Playfair', serif;
+}
+
+.welcome-heading h5 {
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.sfr {
+    z-index: 1;
+    padding-right: 60px;
+}
+
+.ssl {
+    width:750px;
+    height:500px;
+    background-image: url("./tv-bg.jpg");
+    background-size: 100%;
+}
+.slide-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-show {
+    padding-top: 42px;
+    padding-left: 24px;
+    width: 703px;
+    height: 393px;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    background-color: white;
+    width: 100%;
+    height:1024px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    text-align: center; 
+}
+
+.content h1 {
+    font-family: 'Playfair', serif;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: -.03125rem;
+    color: #241c15;
+}
+
+.content p {
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    margin-inline: 295px;
+    line-height: 1.3333;
+    font-weight: 400;
+    color: #241c15;
+}
+
+.poll {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
+}
+
+.pp1 {
+    width: 400px;
+    height: 100%;
+    text-align: center;
+}
+
+.pp1 img {
+    width: 40%;
+    height:100%;
+}
+
+.pp1 p {
+    line-height: 1.4444;
+    font-size: 17px;
+}
+
+.pp2 {
+    width: 400px;
+    height: 100%;
+    text-align: center;
+}
+
+.pp2 img {
+    width: 40%;
+    height:100%;
+}
+
+.pp2 p {
+    line-height: 1.4444;
+    font-size: 17px;
+}
+
+.pp3 {
+    width: 400px;
+    height: 100%;
+    text-align: center;
+}
+
+.pp3 img {
+    width: 40%;
+    height:100%;
+}
+
+.pp3 p {
+    line-height: 1.4444;
+    font-size: 17px;
+}
+
+h2 {
+    font-weight: 300;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.sech {
+    padding-top:80px;
+    text-align: center;
+}
+
+.sech-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sech h1 {
+    font-family: 'Playfair', serif;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: -.03125rem;
+    color: #241c15;
+}
+
+.sech-img img {
+    padding-top: 80px;
+    height: 200px;
+}
+
+
+.detail {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #282A35;
+    height: 250px;
+    width:100%;
+}
+
+.d-text {
+    justify-self: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    padding-left: 60px;
+    position: relative;
+}
+
+.d-text p {
+    font-size: 13px;
+    color: #DDDDDD;
+    padding-top: 10px;
+    transition: font-size 0.3s ease;
+    position: relative;
+}
+
+.d-text p:hover {
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+}
+
+.d-text p::before {
+    transition: font-size 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.d-text p:hover::before {
+    left: 0;
+}
+
+.d-link {
+    display: flex;
+    padding-right: 100px;
+    font-size: 35px;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+}
+
+.d-link i {
+    padding-left: 20px;
+    color: #DDDDDD;
+}
+
+.d-link i:hover {
+    padding-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.hidden-content {
+    display: none !important;
+}
+
+.content p a {
+    text-decoration: none;
+}
+
+.content p a:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background-color: #333; 
+    z-index: 1;
+    min-width: 160px;
+    text-align: center;
+    margin-top:50px;
+    margin-left: 100px;
+}
+
+.navbar-item:hover + .dropdown, .dropdown:hover {
+    display: flex;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+

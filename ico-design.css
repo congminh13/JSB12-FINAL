@@ -1,0 +1,10 @@
+.ff-ico {
+    display: flex;  
+    text-decoration: none;
+}
+
+.nav-bar p {
+    display: flex;
+    align-items: center;
+    color:#FEC723;
+}
